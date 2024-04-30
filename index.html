@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Dolphin Dive</title>
+  </head>
+  <body>
+
+    <!-- nav awal -->
+    <section class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container fw-bolder">
+        <a class="navbar-brand" href="#">
+          <img src="picture/logo.png" alt="Bootstrap" width="80" height="48">
+        </a>
+        <a class="navbar-brand" href="#">Dolphin Dive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- nav akhir -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- form awal -->
+    <section class="modal fade" tabindex="-1" id="booking-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Book a tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form action="#">
+              <div class="row g-2">
+                  <div class="form-floating">
+                    <input id="email1" type="email" class="form-control" placeholder="Your email">
+                    <label for="email1">Email adress</label>
+                  </div>                           
+                  <div class="form-floating">
+                    <select id="select1" class="form-select">
+                      <option>Lovina Beach, Bali - Rp200.000</option>
+                      <option>Teluk Kiluan, Lampung - Rp300.000</option>
+                      <option>Banda Neira, Maluku - Rp400.000</option>
+                    </select>    
+                    <label for="select1">Pick a tour</label>
+                  </div>
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- form akhir -->
+
+    <!-- Home awal -->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="https://images.unsplash.com/photo-1583081213588-85ec3ae2087a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="fs-3 mt-5">Unveil the Secrets of the Sea</p>
+              <h1 class="display-1 fw-bolder text-capitalize">The Dolphin Tours</h1>
+              <button class="btn btn-secondary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://images.unsplash.com/photo-1491986542380-fdf7aebad979?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="fs-3 mt-5">Experience the Magic of Dolphins</p>
+              <h1 class="display-1 fw-bolder text-capitalize">3 available tours</h1>
+              <button class="btn btn-secondary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://images.unsplash.com/photo-1570913173244-4b4baf2fe1d4?q=80&w=1565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="fs-3 mt-5">Dive into the Magic of the Ocean</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Unforgettable Moment</h1>
+              <button class="btn btn-secondary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a tour</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Home akhir -->
+
+    <!-- Overview awal -->
+    <section class="overview">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row w-100 text-center fs-4">
+          <div class="col-xl">
+            <i class="bi bi-airplane-fill me-2"></i>
+            3 amazing destinations
+          </div>
+          <div class="col-xl">
+            <i class="bi bi-people-fill me-2"></i>
+            Expert Guides
+          </div>
+          <div class="col-xl">
+            <i class="bi bi-patch-check-fill me-2"></i>
+            1000's of customers
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- Overview akhir  -->
+  
+    <!-- packages awal -->
+    <section id="packages" class="pt-5">
+      <h2 class="text-center my-5">Packages</h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                class="card-img-top"" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pantai Lovina, Bali - Rp200.000</h5>
+                <p class="card-text">Lovina is famous for dolphin-watching activities in its waters, especially in the early morning hours.
+                </p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  tour</button>
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg">
+            <div class="card">
+              <img src="https://asset.kompas.com/crops/Qvw3wwZF7-CH5iSUR20KU9Xh4ZY=/7x0:781x516/750x500/data/photo/2022/01/09/61dace079a2b2.png" 
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Teluk Kiluan, Lampung - Rp300.000</h5>
+                <p class="card-text">Teluk Kiluan is a popular destination for dolphin-watching tours, where visitors can witness dolphins frolicking in the bay.</p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  tour</button> 
+              </div>    
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card">
+              <img src="https://i.pinimg.com/originals/db/ed/be/dbedbec4b91f26fa057532b86a28e91b.jpg" 
+                class="card-img-top"" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Banda Neira, Maluku - Rp400.000</h5>
+                <p class="card-text">Dolphin sightings around Banda Neira are a delightful experience for visitors, showcasing the marine diversity of this region.</p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book
+                  tour</button> 
+              </div>    
+            </div>
+          </div>
+        </div>    
+      </div>    
+    </section>
+    <!-- packages akhir -->
+
+    <!-- faq awal -->
+    <section id="faq" class="py-5">
+      <h2 class="my-5 text-center">FAQ</h2>
+
+      <div class="accordion  w-75 mx-auto" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <strong>How long is the dolphin watching tour?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Our dolphin watching tour typically lasts around 2-3 hours, including travel time to and from the dolphin habitat.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>Is swimming with dolphins allowed during the tour?</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              No, swimming with dolphins is not permitted during our dolphin watching tour. We prioritize the well-being and natural behavior of dolphins in their habitat.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong> What happens if the tour is canceled due to weather conditions?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              If the tour is canceled due to unfavorable weather conditions, we will reschedule your tour for another available date or provide a full refund of your booking.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <strong>What should I bring for the dolphin watching tour?</strong>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              We recommend bringing sunscreen, a hat, sunglasses, comfortable clothing, and a camera to capture the experience. Binoculars can also be useful for spotting dolphins in the distance.
+            </div>
+          </div>
+      </div>      
+    </section>
+    <!-- faq akhir -->
+
+    <!-- footer awal -->
+    <footer class="bg-dark py-5 mt-5">
+      <div class="container text-light text-center">
+        <p class="display-5 mb-3 fw-bolder">Dive Dolphin</p>
+        <small class="text-white-50">&copy; Dive Dolphin.</small>
+      </div>
+    </footer>
+    <!-- footer akhir -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
